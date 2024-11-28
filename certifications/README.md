@@ -1,4 +1,4 @@
-# Prerequisite: Read AWS Books and/or White Papers
+# Learning Resources
 
 ## Core Reading
 - AWS in Action, 3rd Ed. (Chapter 4 of 18)
@@ -12,9 +12,8 @@
 - AWS Lambda in Action
 - AWS The Good Parts
 - The DynamoDB Book
----
-- Programming Amazon EC2
-- AWS System Administration
+- Programming Amazon EC2 (Deprecated)
+- AWS System Administration (Deprecated)
 
 
 ## Hands-On
