@@ -1,23 +1,7 @@
-# AWS Live Projects
-
-**Note:**
-The phrase "Live Projects" has been shamelessly plagiarized from the ones used by Manning publication. Hope they don't mind.
+# AWS Nerd Notes
 
 ## Core Skills
-- Certifications (AWS)
-  - AWS Certified Cloud Practitioner
-  - AWS Certified AI Practitioner
-  - AWS Certified Solution Architect Associate
-  - AWS Certified Solutions Architect Professional
-  - OPTIONAL
-    - AWS Certified SysOps Administrator Associate
-    - AWS Certified Developer Associate
-    - AWS Certified Machine Learning Associate
-    - AWS Certified Advanced Networking
-    - Certified Kubernetes Administrator
-    - Terraform Associate 003
-    - GitHub Actions
-    - GitHub Copilot
+
 - Infrastructure
   - Ubuntu, Amazon Linux
   - AWS Networking, Networking Services (DNS)
@@ -76,3 +60,21 @@ The phrase "Live Projects" has been shamelessly plagiarized from the ones used b
 - DynamoDB - NoSQL Database
 - RDS - SQL Databases
 - CloudWatch - Monitoring and Logging
+
+## Certifications
+
+#### Core
+- AWS Certified Cloud Practitioner
+- AWS Certified AI Practitioner
+- AWS Certified Solution Architect Associate
+- AWS Certified Solutions Architect Professional
+- Certified Kubernetes Administrator
+
+#### Optional
+- AWS Certified SysOps Administrator Associate
+- AWS Certified Developer Associate
+- AWS Certified Machine Learning Associate
+- AWS Certified Advanced Networking
+- Terraform Associate 003
+- GitHub Actions
+- GitHub Copilot
