@@ -1,20 +1,26 @@
 # Learning Resources
 
-## Core Reading
-- AWS in Action, 3rd Ed. (Chapter 4 of 18)
-- Learn Amazon Web Services in a Month of Lunches (Chapter 1 of 21)
-- AWS Certified Cloud Practitioner Study Guide with 500 Practice Test Questions, 2nd Ed (Charpter 4 of 12)
-- AWS Certified SysOps Administrator Associate Study Guide, 3rd Ed
-- AWS Certified Solutions Architect Associate Study Guide with 900 Practice Test Questions, 4th Ed
-- AWS Certified Advanced Networking Study Guide, 2nd Ed
+## Core Books
+- AWS in Action, 3rd Ed.
+- Learn Amazon Web Services in a Month of Lunches
 - AWS Security
-- Serverless Architectures on AWS, 2nd Ed.
+- Serverless Architectures on AWS 2nd Ed
 - AWS Lambda in Action
+- Generative AI on AWS
+
+## Project-based Books
+- AWS Cloud Projects
+- System Design on AWS
+- Engineering Resilient Systems on AWS
 - AWS The Good Parts
 - The DynamoDB Book
-- Programming Amazon EC2 (Deprecated)
-- AWS System Administration (Deprecated)
 
+## Certifications-Centric Books
+- The Self-Taught Cloud Computing Engineer
+- AWS Certified Cloud Practitioner Study Guide with 500 Practice Test Questions, 2nd Ed (Charpter 4 of 12)
+- AWS Certified Solutions Architect Associate Study Guide with 900 Practice Test Questions, 4th Ed
+- AWS Certified SysOps Administrator Associate Study Guide, 3rd Ed
+- AWS Certified Advanced Networking Study Guide, 2nd Ed
 
 ## Hands-On
 - AWS in Motion (Manning)
@@ -34,3 +40,7 @@
 - [AWS Workshops](https://awsworkshop.io/)
   + [AWS Security Workshops](https://awssecworkshops.com/)
   + [AWS Global Accelerator Workshop](https://intro-to-global-accelerator.workshop.aws/)
+
+## References
+- Programming Amazon EC2 (Deprecated)
+- AWS System Administration (Deprecated)
