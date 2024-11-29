@@ -3,11 +3,23 @@
 ## VPC
 
 ```bash
-# Create VPC
-aws ec2 create-vpc --instance-tenancy "default" --cidr-block "10.0.0.0/24" --tag-specifications '{"resourceType":"vpc","tags":[{"key":"Name","value":"default-vpc"}]}' 
+# Create a Default VPC
+aws ec2 create-vpc --instance-tenancy "default" --cidr-block "10.0.0.0/24" --tag-specifications '{"ResourceType":"vpc","Tags":[{"Key":"Name","Value":"default-vpc"}]}' 
+# OR
+# Create just any VPC
+aws ec2 create-vpc --cidr-block "10.0.0.0/24" --tag-specifications '{"ResourceType":"vpc","Tags":[{"Key":"Name","Value":"new-vpc"}]}' 
 
 # Get VPC ID of the default VPC
 aws ec2 describe-vpcs --filter "Name=isDefault, Values=true" --query "Vpcs[0].VpcId" --output text
+# OR
+aws ec2 describe-vpcs | jq -r '.Vpcs[] | if .IsDefault == true then .VpcId else empty end'
+
+# Spit out a simpler version of the VPC block for all VPCs
+aws ec2 describe-vpcs | jq '.Vpcs[] | { vpcid: .VpcId, name: (if .Tags[0].Key == "Name" then 
+.Tags[0].Value end), cidr: .CidrBlock }'
+
+
+
 
 ```
 
@@ -98,7 +110,10 @@ aws ec2 run-instances \
 ## List running instance(s)
 
 ```bash
+# Using --filters feature of aws cli
 aws ec2 describe-instances --filters "Name=instance-state-name,Values=running" | jq '.Reservations[].Instances[] | {id: .InstanceId, state: .State.Name, public_ip: .PublicIpAddress, public_dns: .PublicDnsName}'
+# OR using just jq
+aws ec2 describe-instances | jq '.Reservations[].Instances[] | if .State.Name == "running" then { id: .InstanceId, state: .State.Name, public_ip: .PublicIpAddress, public_dns: .PublicDnsName } else empty end'
 ```
 
 ## Create tags after an instance is launched
