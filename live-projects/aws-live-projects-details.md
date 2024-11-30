@@ -1,99 +1,87 @@
 # AWS Live Projects
 
-AWS projects should be performed both using AWS Console (*ClickOps*) and Terraform (*Infrastructure as Code IaC*)
+AWS projects should be performed using 
+- AWS Console (*ClickOps*)
+- AWS CLI (*Automation 1.0*)
+- Terraform (*Infrastructure as Code IaC*)
 
-1. Create a VPC with 
-  - us-east-1 Region and us-east-1a AZ
+## Network Setup
+1. Setup SEAZ Organization
+  - Production (current) Account
+  - Playground Account
+  - Configure Brahma Permission Set for users across all accounts
+  - Configure PowerUse Permission Set for a user per account
+2. **1x1:** 1 EC2 instance in 1 AZ that is Internet accessible
+  - VPC
+  - us-east-2 Region in a single AZ
   - 1 Public subnet 
-  - 1 Route Table for the subnet
+  - 1 Route Table
   - 1 Internet Gateway
   - 1 EC2 Instance using Ubuntu 24.04 AMI
-  - 1 Security Group
-2. Create a VPC with 
-  - us-east-1 Region and us-east-1a AZ
-  - 1 Public subnet and 2 Private Subnets
-  - 3 Route Table for each of the subnets
+  - Attach ec2-ssm iam instance profile to the EC2 instance
+3. **2x1:** 2 EC2 instances across 1 AZ, 1 is Internet accessible and the other is in the Private Subnet
+  - VPC
+  - us-east-2 Region in a single AZ
+  - 1 Public subnet 
+  - 1 Private subnet
+  - 1 Route Table for each subnet
   - 1 Internet Gateway
-  - 1 NAT Gateway for the EC2 instances in the two Private subnets
-  - 1 EC2 Instance using Ubuntu 24.04 AMI in each of the subnets
+  - 1 NAT Gateway in the public subnet for the EC2 instance(s) in the private subnet
+  - 2 EC2 Instance using Ubuntu 24.04 AMI, one in each subnet
+  - 1 Security Group for each subnet
+  - Attach ec2-ssm iam instance profile to each EC2 instance
+4. **4x2:** 4 EC2 instances across 2 AZs, 2 are Internet accessible and 2 are in private subnets
+  - VPC
+  - us-east-2 Region across 2 AZs
+  - 2 Public subnets, one in each AZ
+  - 2 Private Subnets, one in each AZ
+  - 2 Route Table, one for EC2 instances in Public subnet and one for EC2 instance(s) in Private subnets
+  - 1 Internet Gateway
+  - 2 NAT Gateway for the EC2 instances, one in each AZ for the Private subnet
+  - 4 EC2 Instances using Ubuntu 24.04 AMI, one in each of the subnets
   - 1 Security Group per EC2 instance
-3. Use the setup in 2 above as base and
-  - Setup nginx as a web server on public subnet with SSL termination
-4. Use the setup in 2 above as base and
+  - Attach ec2-ssm iam instance profile to each EC2 instance
+
+## Nginx Setup as Web Server/Reverse Proxy
+
+1. Nginx with SSL termination using **1x1**
+  - Setup nginx as a web server on public subnets with SSL termination
+2. Reverse Proxy with SSL termination using **2x1**
   - Setup nginx as reverse proxy (layer 7) on public subnet with SSL termination
-  - Setup nginx as Web Server (HTTP only) on any one of the private subnet 
-5. Use the setup in 2 above as base and
-  - Setup nginx as reverse proxy (layer 7) and load balancer on public subnet with SSL termination
-  - Setup multiple nginx as Web Servers (HTTP only) on any one of the private subnet 
-6. Use the setup in 2 above as base and
-  - Setup nginx as reverse proxy (layer 4) on public subnet
-  - Setup nginx as Web Server (HTTP only) on any one of the private subnet 
-7. Use the setup in 2 above as base and
-  - Setup nginx as reverse proxy (layer 4) and load balancer on public subnet
-  - Setup multiple nginx as Web Servers (HTTP only) on any one of the private subnet
+  - Setup nginx as Web Server (HTTP only) on the private subnet 
+3. Use ALB and Target Group using **4x2**
+  - Setup multiple nginx as Web Servers (HTTP only) on the private subnets
+4. Use Route53 and AWS Certificate Manager (ACM)
 
----
+## Wordpress Setup
+1. Wordpress using **1x1**
+2. Wordpress using **1x1** connecting to a Managed RDS
+3. Wordpress using **4x2** connecting to a Managed RDS
 
-## Using EC2
+## Static Hugo Website Setup
 
-- Pick a Region
-- Pick 3 or more AZs to work with
-- Create a VPC
-- Create 6 subnets across the 3 Regions
-  - 3 as public subnet
-  - 3 as private subnet
-- Create related EC2 artifacts
-  - Key pairs
-  - NAT Gateway
-  - Internet Gateway
-  - Security Groups
-  - Network Access Control
-- Instantiate 3 VMs across the 3 Public Subnets as well as 3 VMs across the 3 Private Subnets that hosts "Hello Rocket+DynamoDB" or "Hello SpringBoot+DynamoDB
-- Create an ALB that fronts the 3 public VMs
-- Create Route53 entry and map it to ALB
-- Create a certificate using AWS Certificate Manager and use it for SSL termination
+[Source: How to deploy a Hugo site to S3 in 2024](https://www.jeromethibaud.com/en/blog/deploy-hugo-site-to-s3/)
+- S3 bucket with appropriate settings and replicated across 2 regions
+- Set it up as a Web site
+- Use CloudFront as a CDN and SSL termination
+- Use ACM for SSL Certs
+- Use Route53 for DNS
 
-## Using ECS/Fargate
+## Python App(s) Setup
 
-- Spin up ECS/Fargate cluster(s) that hosts "Hello Rocket+DynamoDB" or "Hello SpringBoot+DynamoDB
-- Create an ALB that fronts the 3 public VMs
-- Create Route53 entry and map it to ALB
-- Create a certificate using AWS Certificate Manager and use it for SSL termination
+- "Hello FastAPI/Flask" with Managed RDS and/or DynamoDB and/or ElastiCache **1x1**
+- "Hello FastAPI/Flask" with Managed RDS or DynamoDB and/or ElastiCache **2x1**
+- "Hello FastAPI/Flask" with Managed RDS or DynamoDB and/or ElastiCache **4x2**
+- ECS/Fargate cluster(s) as Compute
+- EKS Cluster(s) as Compute
 
-## Using EKS
+## Refernces
 
-- Spin up EKS cluster(s) that hosts "Hello Rocket+DynamoDB" or "Hello SpringBoot+DynamoDB
-- Create an ALB that fronts the 3 public VMs
-- Create Route53 entry and map it to ALB
-- Create a certificate using AWS Certificate Manager and use it for SSL termination
+## Build Modern Apps in AWS
 
-## Using Lambda
+[Source](./building-apps-in-aws.md)
 
-- Create a Lambda that responds to an API call
-- Create a Lambda that responds to uploads in S3 bucket
-- Create a Lambda that puts message(s) into SQS/SNS
-
-## Using S3
-
-- Create S3 buckets and review features
-  - Replicates updates across regions
-  - Set it up as a Web site
-  - Use CloudFront as a CDN
-  - Use Route53 for DNS
-  - Use Certificate Manager for SSL termination
-
-## Define CD Pipeline tools
-
-- Use GitHub, GitHub Actions
-- Use Artifactory and/or ECR
-- Explore AWS Code\* tools
-
-## Using Terraform/CloudFormation
-
-- Automate (almost) everything using Terraform
-- Automate (almost) everything using CloudFormation
-
-## AWS Services used in DevHub
+### DevHub Setup
 
 - IAM
 - EC2

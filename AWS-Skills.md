@@ -49,7 +49,7 @@
   - Auto Scaling Groups
 - Route53 DNS
   - CloudFront CDN
-  - AWS Certificate Manger
+  - AWS Certificate Manger (ACM)
 - Fargate, ECS, and EKS - Running and Managing Containers
 - Lambda - Executing Functions
 - API Gateway
