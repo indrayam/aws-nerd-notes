@@ -1,0 +1,67 @@
+# AWS Services Focus Area
+
+- IAM - Restricting Access to Cloud Resources
+- IAM Identity Center
+- Certificate Manger (ACM)
+- GuardDuty => Builds Machine learning model using VPC Flow logs, DNS traffic, etc. (ENABLE)
+- Inspector => Scanning for SW vulnerabilities or Networking configs on EC2 (OPTIONALLY ENABLE)
+- *Macie* => Discover, Classify, and protect sensitive data on S3 
+- *WAF & Shield*
+- *Security Hub*
+- *Secrets Manager*
+- *Key Management Service*
+- VPC => Virtual Network
+- Route53 DNS
+- CloudFront CDN
+- API Gateway
+- EC2 => Virtual Machines
+- ELB => Load Balancers
+- Lambda => Executing Functions
+- *AppRunner*
+- ECS => Running and Managing Containers
+- EKS => Running and Managing Containers using Kubernetes
+- AWS Backup
+- S3 => Object Store
+- EBS => Elastic Block Storage for Virtual Machines
+- EFS => Network filesystem
+- RDS => SQL Databases
+- Aurora DSL => Distributed SQL
+- DynamoDB => NoSQL Database
+- ElastiCache => In-memory K/V store
+- SQS => Distributed Queues w/ one consumer
+- SNS => Notification Service
+- *AWS EventBridge* (Definitely worth a look as an Ops Tool)
+- *Step Functions*
+- AWS Organizations
+- Auto Scaling
+- CloudWatch => Monitoring and Logging
+- CloudTrail => Auditing Events (Management Events are free; Data events are not) (ENABLE)
+- Systems Manager (SSM)
+- *AWS Config*
+- *Trusted Advisor*
+- *Well-Architected Tool*
+- *Resource Groups & Tag Editor*
+- Billing and Cost Management
+- *RedShift* => Data Warehousing
+- *EMR* => Managed Hadoop Framework
+- *Athena* => SQL support for data in S3
+- *Glue* => Managed ETL service
+- *Kinesis* => Work with real-time streaming data
+- *MSK* => Managed Apache Kafka
+- SageMaker AI => Build, Train, and Deploy Machine Learning Models
+- Bedrock => Build and scale GenAI apps with Foundation Models (FM)
+- Lex => Build Voice and Text chatbot
+- Kendra => Enterprise search service powered by ML (includes similarity search using embeddings)
+- Comprehend => Analyze unstructured text
+- Transcribe => Speech recognition transformed into text
+- Tranlate => ML powered translation
+- Polly => Turn text into lifelike speech
+- *Rekognition* => Search and analyze images
+- *Fraud Detector* => Detect online fraud using ML
+- *Forecast* => Time-series forecasting using ML
+- *CodeGuru* => AWS's answer to GitHub CoPilot
+- *DevOpsGuru* => ML powered Cloud Operations service to improve app availability
+- *Lookout* 
+  - *...for Vision* => Identify defects using computer vision to automate quality inspection
+  - *...for Metrics* => Identify anomalies in your business metrics and understand why
+  - *...for Equipment* => Identify anomalies in your equipment behavior by analyzing sensor data

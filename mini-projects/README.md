@@ -1,5 +1,6 @@
-# Building Apps in AWS
+# AWS Mini Projects
 
+## Dev Expectations
 - Use AI-assisted Editor
 - GitHub
 - GitHub Actions
@@ -9,6 +10,10 @@
 - Unit Tests
 - Dockerfile to Package it as OCI compliant image
 - Store secrets in Secret Manager
+- AWS projects should be performed using 
+  - AWS Console (*ClickOps*)
+  - AWS CLI (*Automation 1.0*)
+  - Terraform (*Infrastructure as Code IaC*)
 
 ## Sample Apps
 
@@ -68,3 +73,27 @@
   - Kafka on a VM
   - MongoDB on a VM
   - Redis on a VM
+
+
+## REFERENCE: DevHub
+
+- IAM
+- EC2
+  - VPC
+  - Subnet
+  - Security Groups
+  - Route Tables
+  - Internet Gateway
+  - NAT Gateway
+- Route53
+  - Hosted Zones
+  - Traffic Policy
+- ACM
+- ALB
+  - Target Groups
+- Classic ELB
+  - Target Groups
+- EKS
+- RDS
+- S3
+- CloudWatch

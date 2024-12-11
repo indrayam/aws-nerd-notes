@@ -18,9 +18,6 @@ aws ec2 describe-vpcs | jq -r '.Vpcs[] | if .IsDefault == true then .VpcId else 
 aws ec2 describe-vpcs | jq '.Vpcs[] | { vpcid: .VpcId, name: (if .Tags[0].Key == "Name" then 
 .Tags[0].Value end), cidr: .CidrBlock }'
 
-
-
-
 ```
 
 ## Subnets
@@ -50,14 +47,15 @@ aws ec2 attach-internet-gateway --vpc-id "vpc-072b28f442e621e76" --internet-gate
 
 ## Get AMI
 
-Source: [Find the most recent Ubuntu AMI using aws-cli](https://gist.github.com/vancluever/7676b4dafa97826ef0e9)
-
 ```bash
 # Notice the hardcoded ownerid. Used ChatGPT to get that info
 # Canonical Ubuntu: 099720109477
 # Amazon Linux: 137112412989
 # RedHat: 309956199498
 # Notice the hardcoded pattern for the month and ami name for Ubuntu
+
+# Get AMI details of the images you have authored
+aws ec2 describe-images --region us-east-2 --owners self | jq '.Images[] | {name: .Name, ami_id: .ImageId, arch: .Architecture, description: .Description}'
 
 # Latest Ubuntu AMI. Use these to get Name patterns
 aws ec2 describe-images --region us-east-2 --image-id ami-0ea3c35c5c3284d82
@@ -102,9 +100,10 @@ aws ec2 run-instances \
 --image-id ami-036841078a4b68e14 \
 --instance-type t3.micro \
 --key-name "Anand Sharma (Cloudy)" \
+--subnet-id subnet-0d3961f8577f599c0 \
 --security-group-ids sg-0303fbb3c5398af26 \
 --iam-instance-profile '{"Name": "ec2-ssm-core"}' \
---tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=play1},{Key=Environment,Value=playground}]'
+--tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=play4},{Key=Environment,Value=playground}]'
 ```
 
 ## List running instance(s)
@@ -113,7 +112,7 @@ aws ec2 run-instances \
 # Using --filters feature of aws cli
 aws ec2 describe-instances --filters "Name=instance-state-name,Values=running" | jq '.Reservations[].Instances[] | {id: .InstanceId, state: .State.Name, public_ip: .PublicIpAddress, public_dns: .PublicDnsName}'
 # OR using just jq
-aws ec2 describe-instances | jq '.Reservations[].Instances[] | if .State.Name == "running" then { id: .InstanceId, state: .State.Name, public_ip: .PublicIpAddress, public_dns: .PublicDnsName } else empty end'
+aws ec2 describe-instances | jq '.Reservations[].Instances[] | if .State.Name == "running" then { id: .InstanceId, state: .State.Name, public_ip: .PublicIpAddress, public_dns: .PublicDnsName, subnet_id: .SubnetId, private_ip: .PrivateIpAddress, name: (.Tags[] | if .Key == "Name" then .Value else empty end) } else empty end'
 ```
 
 ## Create tags after an instance is launched

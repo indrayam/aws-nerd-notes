@@ -1,5 +1,7 @@
 # AWS Nerd Notes
 
+[Source: O'Reilly Safari Recorded Sessions](./practice-exercises/README.md)
+
 ## AWS
 
 ### Core Books
