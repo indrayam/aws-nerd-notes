@@ -1,23 +1,5 @@
 # AWS Skills
 
-## Skills @ 10,000k ft.
-
-- Infrastructure
-  - Ubuntu, Amazon Linux
-  - Kubernetes, Containers
-  - AWS Networking, Networking Services (DNS)
-  - Terraform, Ansible
-  - GitHub, GitHub Actions
-- Programming
-  - Python (go, rust, java, javascript)
-  - Postgres, MongoDB, DuckDB
-  - Kafka, RabbitMQ
-- AI
-  - Machine Learning
-  - Deep Learning
-  - Large Language Models
-- Command-Line Tinkerer
-
 ## Core AWS Building Blocks and Services
 
 - Security, Identity, and Compliance
@@ -124,7 +106,7 @@
 ## Certifications
 
 - Core
-  - AWS Certified Cloud Practitioner
+  - AWS Certified Cloud Practitioner **DONE**
   - AWS Certified AI Practitioner
   - AWS Certified Solution Architect Associate
   - AWS Certified Solutions Architect Professional

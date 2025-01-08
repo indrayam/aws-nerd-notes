@@ -1,28 +1,29 @@
 # Recorded O'Reilly Safari Events
 
 ## AWS - Certified Cloud Practitioner
-- **CORE**
-  - [Video Recording: AWS Cloud Practitioner (CLF-C02) Certification Course, Bill Bouden](https://learning.oreilly.com/videos/-/0636920864295/continue) Dec 2023, 5 hrs **DONE**
-  - AWS Certified Cloud Practitioner CLF-C02 (Pearson Practice Test)
-    - Exam 1 **DONE**
-    - Exam 2 **DONE**
-    - Exam 3
-    - Exam 4
-    - Exam 5
-    - Exam 6
-    - Wiley Test Banks
-  - [Live Course: AWS Certified Cloud Practitioner Bootcamp, Bill Boulden](https://learning.oreilly.com/live-events/aws-certified-cloud-practitioner-bootcamp/0636920085066/0642572009068/) Dec 2024, 6 hrs
-  - Complete and review personal notes on 140 AWS services called out for Cloud Practitioner
-- **OPTIONAL**:
-  - Book: AWS Certified Cloud Practitioner Study Guide, 2nd Ed
-  - [Video Recording: AWS Certified Cloud Practitioner (CLF-C02), Chad Smith](https://learning.oreilly.com/videos/-/9780138314934/continue) Dec 2023, 9 hrs
-  - https://study.learning.wiley.com/products/534b75d0-651f-458c-8f8f-63ad620dc642?tab=units
-  - [Getting Started with Amazon Web Services (AWS), Richard Jones](https://learning.oreilly.com/live-events/getting-started-with-amazon-web-services-aws/0636920126294/0636920237099/) Jan 2018, Mar 2019
+- [Video Recording: AWS Cloud Practitioner (CLF-C02) Certification Course, Bill Bouden](https://learning.oreilly.com/videos/-/0636920864295/continue) Dec 2023
+- [Live Course: AWS Certified Cloud Practitioner Bootcamp, Bill Boulden](https://learning.oreilly.com/live-events/aws-certified-cloud-practitioner-bootcamp/0636920085066/0642572009068/)
+- [Video Recording: AWS Certified Cloud Practitioner (CLF-C02), Chad Smith](https://learning.oreilly.com/videos/-/9780138314934/continue) Dec 2023
+- [Getting Started with Amazon Web Services (AWS), Richard Jones](https://learning.oreilly.com/live-events/getting-started-with-amazon-web-services-aws/0636920126294/0636920237099/) Jan 2018
 
 
 ## AWS - Certified AI Practitioner
+- [From Software Engineer to AI Data Scientist](https://learning.oreilly.com/live-events/from-software-engineer-to-ai-data-scientist/0642572007671/0642572010692/)
+- [Prompting Bootcamp](https://learning.oreilly.com/live-events/prompting-bootcamp/0636920097098/0642572010284/)
+- [Fundamentals of Machine Learning for Software Engineers](https://learning.oreilly.com/live-events/fundamentals-of-machine-learning-for-software-engineers/0790145079967/0642572005362/)
+- [Deep Learning for Modern AI](https://learning.oreilly.com/live-events/deep-learning-for-modern-ai/0642572005084/0642572010124/)
+- [Choosing the Right LLM](https://learning.oreilly.com/live-events/choosing-the-right-llm/0642572002832/0642572010148/)
 - [Generative AI for Cloud Practitioners](https://learning.oreilly.com/live-events/generative-ai-for-cloud-practitioners/0642572001983/0642572008116/) Nov 2024
 - [Live Course: AWS AI Practitioner Crash Course](https://learning.oreilly.com/live-events/aws-ai-practitioner-crash-course/0642572009853/0642572009852/) Dec 2024
+
+## AWS - Certified Developer Associate
+- [Deploying Container-Based Microservices on AWS, Richard Jones](https://learning.oreilly.com/live-events/deploying-container-based-microservices-on-aws/0636920170631/0636920238485/) June 2018, March 2019
+- [AWS Certification Prep: Developer - Associate, Bill Boulden](https://learning.oreilly.com/live-events/aws-certification-prep-developer-associate/0636920410744/0636920461746/) Nov 2020
+- [AWS Certified Developer Associate Crash Course, Nick Garner](https://learning.oreilly.com/live-events/aws-certified-developer-associate-crash-course/0636920262831/0636920447825/) Sep 2020
+- [Creating serverless APIs with AWS Lambda and API Gateway, Bill Boulden](https://learning.oreilly.com/live-events/creating-serverless-apis-with-aws-lambda-and-api-gateway/0636920109525/0636920242994/) Jan 2019
+- [Designing Serverless Architecture with AWS Lambda, Yan Cui](https://learning.oreilly.com/live-events/designing-serverless-architecture-with-aws-lambda/0636920103936/0636920263869/) Apr 2019
+- [AWS Certified Database - Specialty Crash Course, Chad Smith](https://learning.oreilly.com/live-events/aws-certified-database-specialty-crash-course/0636920403142/0636920469490/) Nov 2020
+- [Kubernetes on AWS, Vallard Benincosa](https://learning.oreilly.com/live-events/kubernetes-on-aws/0636920359593/0636920359586/) Feb 2020
 
 
 ## AWS - Certified Solution Architect Associate
@@ -32,19 +33,8 @@
 - [AWS Certified Solutions Architect Prep Session, Mark Wilkins](https://learning.oreilly.com/live-events/aws-certified-solutions-architect-prep-session/0636920328803/0636920448471/) Nov 2020
 - [AWS Certified Solutions Architect Associate Crash Course, Richard Jones](https://learning.oreilly.com/live-events/aws-certified-solutions-architect-associate-crash-course/0636920167495/0636920319108/) June 2018, May 2019, Oct 2019
 
-## AWS - Certified Developer Associate
-
-- [Deploying Container-Based Microservices on AWS, Richard Jones](https://learning.oreilly.com/live-events/deploying-container-based-microservices-on-aws/0636920170631/0636920238485/) June 2018, March 2019
-- [AWS Certification Prep: Developer - Associate, Bill Boulden](https://learning.oreilly.com/live-events/aws-certification-prep-developer-associate/0636920410744/0636920461746/) Nov 2020
-- [AWS Certified Developer Associate Crash Course, Nick Garner](https://learning.oreilly.com/live-events/aws-certified-developer-associate-crash-course/0636920262831/0636920447825/) Sep 2020
-- [Serverless Go, Johnny Boursiquot](https://learning.oreilly.com/live-events/serverless-go/0636920407041/0636920478256/) Nov 2020
-- [Creating serverless APIs with AWS Lambda and API Gateway, Bill Boulden](https://learning.oreilly.com/live-events/creating-serverless-apis-with-aws-lambda-and-api-gateway/0636920109525/0636920242994/) Jan 2019
-- [Designing Serverless Architecture with AWS Lambda, Yan Cui](https://learning.oreilly.com/live-events/designing-serverless-architecture-with-aws-lambda/0636920103936/0636920263869/) Apr 2019
-- [AWS Certified Database - Specialty Crash Course, Chad Smith](https://learning.oreilly.com/live-events/aws-certified-database-specialty-crash-course/0636920403142/0636920469490/) Nov 2020
-- [Kubernetes on AWS, Vallard Benincosa](https://learning.oreilly.com/live-events/kubernetes-on-aws/0636920359593/0636920359586/) Feb 2020
 
 ## AWS - Certified SysOps Associate
-
 - [Managing Cloud Costs, Deiter Matzion](https://learning.oreilly.com/live-events/managing-cloud-costs/0636920321743/0636920321736/) Oct 2019
 - [AWS Security Fundamentals, Michael Wittig](https://learning.oreilly.com/live-events/aws-security-fundamentals/0636920095590/0636920176985/) June 2018
 - [AWS Networking Essentials, Michael J. Shannon](https://learning.oreilly.com/live-events/aws-networking-essentials/0636920376736/0636920056181/) June 2020, June 2021
@@ -55,7 +45,6 @@
 - [AWS CloudFormation Deep Dive, Richard Jones](https://learning.oreilly.com/live-events/aws-cloudformation-deep-dive/0636920183457/0636920252399/) June 2018, April 2019
 
 ## Math for AI, Data Science
-
 - [Linear Algebra with Python: Essential Math for Data Science, Michael Cullan](https://learning.oreilly.com/live-events/linear-algebra-with-python-essential-math-for-data-science/0636920303268/0636920363125/) Sep 2019, Feb 2020
 - [Linear Algebra with Python: Essential Math for Data Science, Russell Martin](https://learning.oreilly.com/live-events/linear-algebra-with-python-essential-math-for-data-science/0636920303268/0636920303251/) Sep 2019, Feb 2020
 - [Linear Regression with Python: Essential Math for Data Science, Michael Cullan](https://learning.oreilly.com/live-events/linear-regression-with-python-essential-math-for-data-science/0636920303282/0636920363163/) Feb 2020
@@ -63,7 +52,6 @@
 
 ## Machine Learning
 - [Machine Learning from Scratch, Thomas Nield](https://learning.oreilly.com/live-events/machine-learning-from-scratch/0636920054754/0636920095746/) Aug 2023
-
 
 ## Deep Learning
 - [Deep Learning for Beginners in 3 Weeks, Thomas Nield](https://learning.oreilly.com/live-events/deep-learning-for-beginners-in-3-weeks/0636920079316/0636920096447/) Sep 2023
@@ -79,24 +67,9 @@
 - [LLMs, GPT, and Prompt Engineering for Developers, Sinan Ozdemir](https://learning.oreilly.com/live-events/llms-gpt-and-prompt-engineering-for-developers/0636920094338/0636920094337/) Sep 2023
 - [Using Open- and Closed-Source LLMs in Real World Applications, Sinan Ozdemir](https://learning.oreilly.com/live-events/using-open-and-closed-source-llms-in-real-world-applications/0636920094342/0636920094341/) Sep 2023, July 2024
 
-## Python Programming
-- [Python Environments and Best Practices, Arianne Dee](https://learning.oreilly.com/live-events/python-environments-and-best-practices/0636920444237/0642572010599/) Dec 2024
-- [Learning Python 3 by Example, Nicholas Russo](https://learning.oreilly.com/live-events/learning-python-3-by-example/0636920223832/0636920498414/) Jan 2021
-
-## Go Programming
-- [Introduction to the Go Programming Language, Jay Macgavren](https://learning.oreilly.com/live-events/introduction-to-the-go-programming-language/0636920273189/0636920509769/) Jan 2025, Oct 2020, Jan 2021
-- [Go in 3 Weeks, Johnny Boursiquot](https://learning.oreilly.com/live-events/go-in-3-weeks/0636920060986/0636920062624/) Jan 2022
-- [Practical Go Modules, Benjamin Muschko](https://learning.oreilly.com/live-events/practical-go-modules/0636920365587/0636920455745/) Nov 2020
-- [Go the Right Way, Simon Roberts](https://learning.oreilly.com/live-events/go-the-right-way/0790145042893/) Jan 2025
-- [Concurrent Programming in Go - with Interactivity, Alex Mills](https://learning.oreilly.com/live-events/concurrent-programming-in-go-with-interactivity/0636920092460/) Dec 2024
-- [An Introduction to Go for Systems Programmers and Web Developers, Mihalis Tsoukalos](https://learning.oreilly.com/live-events/an-introduction-to-go-for-systems-programmers-and-web-developers/0636920213963/0636920214069/)
-- [Getting Started with Go, Mark Bates](https://learning.oreilly.com/live-events/getting-started-with-go/0636920148562/0636920165255/) Mar 2018
-
-## Rust Programming
-- [Rust in 4 Hrs, Andy Olsen](https://learning.oreilly.com/live-events/rust-in-4-hours/0636920063666/) Nov 2021, Jan 2025
-- [Fundamentals of Rust, Mihalis Tsoukalos](https://learning.oreilly.com/live-events/fundamentals-of-rust/0636920239352/0636920239345/) Jan 2019
 
 ## Java Programming
+- [Integrating AI in Java Projects](https://learning.oreilly.com/live-events/integrating-ai-in-java-projects/0642572001330/0642572010116/) Dec 2024
 - [Java 8 Generics in 4 Hrs, Simon Roberts](https://learning.oreilly.com/live-events/java-8-generics-in-4-hours/0636920126201/0636920051751/) Sep 2019, Feb 2021
 - [Java® Full Throttle with Paul Deitel: A One-Day, Code-Intensive Java Standard Edition Presentation](https://learning.oreilly.com/live-events/java-full-throttle-with-paul-deitel-a-one-day-code-intensive-java-standard-edition-presentation/0636920162582/0636920051472/) Apr 2018, Feb 2021
 - [Solving Java Memory Leaks, Kirk Pepperdine](https://learning.oreilly.com/live-events/solving-java-memory-leaks/0636920288152/0636920498674/) Jan 2021
@@ -127,12 +100,12 @@
 - [Building a Modern Data Platform with Snowflake, Jacob Thomas](https://learning.oreilly.com/live-events/building-a-modern-data-platform-with-snowflake/0636920414971/0636920414964/) Sep 2020
 
 ## Data Engineering
+- [Building Your First ETL Data Platform](https://learning.oreilly.com/live-events/building-your-first-etl-data-platform/0642572000874/0642572010215/) Dec 2024
 - [Kafka Fundamentals, Peter Graff](https://learning.oreilly.com/live-events/kafka-fundamentals/0636920077756/0636920265276/) Apr 2019, May 2019
 - [Apache Hadoop, Spark and Big Data Foundations, Douglas Eadline](https://learning.oreilly.com/live-events/apache-hadoop-spark-and-big-data-foundations/0636920124269/0636920274186/) Apr 2019
 - [Real-time data foundations: Kafka, Ted Malaska](https://learning.oreilly.com/live-events/real-time-data-foundations-kafka/0636920182948/0636920238676/) Apr 2019
 - [Real-time data foundations: Spark, Ted Malaska](https://learning.oreilly.com/live-events/real-time-data-foundations-spark/0636920182894/0636920238720/) Apr 2019
 - [Real-time data foundations: Flink, Ted Malaska](https://learning.oreilly.com/live-events/real-time-data-foundations-flink/0636920182917/0636920238775/) Apr 2019
-
 
 ## DevOps Tools
 - [GitHub Actions in 4 Hours](https://learning.oreilly.com/live-events/github-actions-in-4-hours/0636920078758/0636920078757/) Sep 2022, Jan 2025
@@ -143,7 +116,6 @@
 - [Next Level Git - Master your workflow, Brent Laster](https://learning.oreilly.com/live-events/next-level-git-master-your-workflow/0636920190240/0636920385035/) May 2020
 - [Level Up with GitHub Copilot, Rizel Scarlett](https://learning.oreilly.com/live-events/level-up-with-github-copilot/0636920090759/0636920097069/) Sep 2023
 - [Boosting Software Development with Generative AI, Natalie Pistunovich](https://learning.oreilly.com/live-events/boosting-software-development-with-generative-ai/0636920094087/0642572001799/) Sep 2024
-
 
 ## Compute
 - [Building Linux Servers: DHCP, DNS, and Directory Services, David Prowse](https://learning.oreilly.com/live-events/building-linux-servers-dhcp-dns-and-directory-services/0636920394181/0636920055465/) May 2021
@@ -158,6 +130,7 @@
 - [9 Steps to Awesome with Kubernetes, Burr Sutter](https://learning.oreilly.com/live-events/9-steps-to-awesome-with-kubernetes/0636920196105/0636920199342/) Sep 2018
 
 ## Networking & Security
+- [Build Your Own Networking Lab](https://learning.oreilly.com/live-events/build-your-own-networking-lab/0642572002817/0642572010136/) Dec 2024
 - [How Routers Really Work: Network Operating Systems and Packet Switching, Russ White](https://learning.oreilly.com/live-events/fundamentals-of-event-driven-microservices/0636920410980/0636920052538/) Nov 2021
 - [How the Internet Really Works: Part 2, Russ White](https://learning.oreilly.com/live-events/how-the-internet-really-works-part-2/0636920051712/0636920056803/) June 2021
 - [IP Subnetting from Beginning to Mastery, Wendell Odom](https://learning.oreilly.com/live-events/ip-subnetting-from-beginning-to-mastery/0636920224228/0636920390091/) June 2020

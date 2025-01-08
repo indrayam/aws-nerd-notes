@@ -1,0 +1,425 @@
+# AWS Certified AI Practitioner (AIF-C01) 2024
+
+## Exam Details
+- [AWS Certified AI Practitioner (AIF-C01) Exam Guide](https://d1.awsstatic.com/training-and-certification/docs-ai-practitioner/AWS-Certified-AI-Practitioner_Exam-Guide.pdf?p=cert&c=ai&z=3)
+- [AWS AI Certified Practitioner](https://aws.amazon.com/certification/certified-ai-practitioner/)
+
+## Exam Format
+- 90 mins
+- ~65 questions
+- Your results for the examination are reported as a score from 100–1,000, with a minimum passing score of 700. Your score shows how you performed on the examination as a whole and whether or not you passed.
+
+## Understanding AWS AI Offerings
+- Explain the capabilities of AWS managed AI/ML services
+  - SageMaker
+  - Amazon Transcribe
+  - Amazon Translate
+  - Amazon Comprehend
+  - Amazon Lex
+  - Amazon Polly
+- Identify relevant AWS services and features for each stage of an ML pipeline
+  - SageMaker
+  - Amazon SageMaker Data Wrangler
+  - Amazon SageMaker Feature Store
+  - Amazon SageMaker Model Monitor
+- Identify AWS services and features to develop generative AI applications
+  - Amazon SageMaker JumpStart
+  - Amazon Bedrock
+  - PartyRock, an Amazon Bedrock Playground
+  - Amazon Q
+- Identify AWS services that help store embeddings within vector databases
+  - Amazon OpenSearch Service
+  - Amazon Aurora
+  - Amazon Neptune
+  - Amazon DocumentDB with MongoDB compatibility
+  - Amazon RDS for PostgreSQL
+- Identify AWS services that support agents for generative AI applications
+  - Agents for Amazon Bedrock
+- Identify AWS services/tools of Responsible AI
+  - Guardrails for Amazon Bedrock
+- Identify AWS services/tools to detect and monitor bias in AI models (label quality, human audits, subgroup analysis)
+  - Amazon SageMaker Clarify
+  - Sagemaker Model Monitor
+  - Amazon Augmented AI
+- Identify AWS services/tools to identify transparent and explainable models
+  - Amazon SageMaker Model Cards
+  - Open source models
+  - Data
+  - Licensing
+- Identify AWS services and features to secure AI systems
+  - IAM roles, policies, and permissions
+  - Encryption
+  - Amazon Macie
+  - AWS PrivateLink
+  - AWS shared responsibility model
+- Identify AWS services and features to assist with governance and regulation compliance
+  - AWS Config
+  - Amazon Inspector
+  - AWS Audit Manager
+  - AWS Artifact
+  - AWS CloudTrail
+  - AWS Trusted Advisor
+- Advantages of using AWS generative AI services to build applications
+  - Accessibility
+  - Lower barrier to entry
+  - Efficiency
+  - Cost-effectiveness
+  - Speed to market
+  - Ability to meet business objectives
+- Advantages of using AWS infrastructure for generative AI applications
+  - Security
+  - Compliance
+  - Responsibility (?)
+  - Safety (?)
+- Cost tradeoffs of AWS generative AI services
+  - Responsiveness
+  - Availability
+  - Redundancy
+  - Performance
+  - Regional Coverage
+  - Token-based Pricing
+  - Provision throughput
+  - Custom Models
+
+## Basic Definitions and Concepts
+- Artificial Learning
+- Machine Learning
+- Deep Learning
+  - Convolutional Neural Networks (CNN)
+  - Recurrent Neural Networks (RNN)
+  - Long Short-Term Memory (LSTM)
+  - Transformer
+  - Large Language Models (LLMs)
+- Neural Network
+- Computer Vision
+- Natural Language Processing (NLP)
+- Model
+- Algorithm
+- Training
+- Inferencing
+  - Real-time
+  - Batch
+- Bias
+- Fairness
+- Fit
+- Feature
+- Label
+- Data
+  - Labelled
+  - Unlabelled
+  - Tabular
+  - Time Series
+  - Image
+  - Text
+  - Structured
+  - Unstructured
+
+## Machine Learning (ML) and Deep Learning (DL)
+- ML Models
+  - Clustering
+    - K-means
+  - Logistic Regression
+  - Decision Trees
+  - Random Forest
+  - Collaborative Filtering
+- Neural Network Architectures
+  - Convolutional Neural Networks (CNN)
+  - Recurrent Neural Networks (RNN)
+  - Long Short-Term Memory (LSTM)
+  - Transformer
+- ML Techniques
+  - Supervised Learning
+  - Unsupervised Learning
+  - Reinforcement Learning
+  - Activation Function
+    - ReLU
+    - Sigmoid
+    - Tanh
+  - Backpropagation
+  - Gradient Descent
+  - Loss Function
+    - Mean Squared Error
+    - Cross-Entropy
+  - Objective Function
+  - Regularization
+    - L1
+    - L2
+  - Generalization
+  - Hyperparameter Tuning
+- ML Tasks
+  - Classification
+  - Regression
+  - Clustering
+  - Dimensionality Reduction
+    - Principal Component Analysis (PCA)
+  - Anomaly Detection
+  - Recommendation
+  - Forecasting
+  - Machine Translation
+- ML Development Lifecycle
+  - ML Pipeline
+    - Data Collection
+    - Data Cleaning
+      - Exploratory Data Analysis (EDA)
+      - Data Preprocessing
+    - Feature Engineering
+    - Model Selection
+    - Model Training
+      - Batch Normalization
+    - Model Evaluation
+    - Model Deployment
+    - Model Monitoring
+  - ML Models Source
+    - Open Source Pre-trained Models
+    - Closed Source Pre-trained Models
+    - Custom Models
+  - Using ML Models in Production
+    - Managed API Service
+    - Self-Managed API Service
+  - MLOps Concepts
+    - Experimentation
+    - Repeatable Processes
+    - Scalable Systems
+    - Managing Tech Debt
+    - Production Readiness
+    - Model Monitoring
+    - Model Re-training
+  - ML Metrics
+    - Area Under the ROC Curve (AUC)
+    - Accuracy
+    - Precision
+    - Recall
+    - F1 Score
+    - ROC Curve
+    - Mean Squared Error
+    - Log-likelihood
+  - ML Business Metrics
+    - Cost per user
+    - Development Time and Costs
+    - ROI
+
+## Generative AI
+- Concepts
+  - Tokenization
+  - Chunking
+  - Embeddings
+  - Vectors
+  - Prompt Engineering
+  - Transformer based LLMs
+  - Foundation Models
+  - Multi-modal Models
+  - Diffusion Models
+- Use-cases of GenAI Models
+  - Text Generation
+  - Image Generation
+  - Video Generation
+  - Audio Generation
+  - Code Generation
+  - Data Generation
+  - Simulation
+  - Anomaly Detection
+  - Data Augmentation
+  - Data Imputation
+  - Data Synthesis
+  - Data Translation
+  - Data Compression
+  - Data Denoising
+  - *Chatbots*
+  - *Customer Service Agents*
+  - *Recommendation Engines*
+- Foundation Model lifecycle
+  - Data Selection
+  - Model Selection
+  - Pre-training
+  - Fine-tuning
+  - Evaluation
+  - Deployment
+  - Feedback
+  - Re-training
+- Capabilities and Limitations of GenAI for Business Problems
+  - Advantages
+    - Adaptability
+    - Responsiveness
+    - Cost-Effectiveness
+    - Speed
+    - Simplicity
+  - Disadvantages
+    - Hallucination
+    - Interpretability
+    - Inaccuracy
+    - Non-deterministic
+    - Bias
+  - Factors driving selection of Gen AI Models
+    - Model Types
+    - Performance Requirements
+    - Capabilities
+    - Constraints
+    - Compliance
+  - Business Value and Metrics for GenAI Apps
+    - Cross-domain performance
+    - Efficiency
+    - Conversion Rate
+    - ARPU
+    - Accuracy
+    - Customer Satisfaction
+    - Customer Lifetime Value
+- Applications using Foundation Models
+  - Selection Criteria to choose Pre-trained models
+    - Cost
+    - Modality
+    - Latency
+    - Multi-language Support
+    - Model size
+    - Model complexity
+    - Customization
+    - Input/output length (Context Window?)
+  - Inference Parameters Effect
+    - Temperature
+    - Input/Output Length
+  - Retreival Augmented Generation (RAG)
+    - Concepts
+    - Use-cases
+    - Benefits
+    - Risks
+  - Cost tradeoffs of various approaches to Foundation model customization 
+    - Pre-training
+    - Fine-tuning
+    - In-context learning
+    - RAG
+  - Prompt-Engineering
+    - Concepts 
+      - Context
+      - Instructions
+      - Negative Prompts
+      - Model Latent Space
+    - Prompt Engineering Techniques
+      - Chain-of-Thought
+      - Zero-shot
+      - Single-shot
+      - Few-shot
+      - Prompt Templates
+    - Prompt Engineering Benefits
+      - Customization (Response Quality Improvement)
+      - Experimentation
+      - Guardrails
+      - Discoverability
+      - Specificity and Conciseness using multiple comments
+    - Prompt Engineering Risks
+      - Exposure
+      - Poisoning
+      - Hijacking
+      - Jailbreaking
+  - Foundation Model Training and Fine-Tuning Process
+    - Key Elements
+      - Pre-training
+      - Fine-tuning
+      - Continuous Pre-training
+    - Fine-tuning Techniques
+      - Instruction Tuning
+      - Adapting Models for specific domains
+      - Transfer Learning
+      - Continuous Pre-training
+    - Prepare data for Fine-tuning a Foundation Model
+      - Data Curation
+      - Governance
+      - Size
+      - Labeling
+      - Representativeness of Data
+      - Reinforcement Learning through Human Feedback (RLHF)
+  - Methods to evaluate Foundation Model performance
+    - Approaches
+      - Human Evaluation
+      - Benchmark Datasets
+    - Metrics to assess Foundation Model performance
+      -  Recall-Oriented Understudy for Gisting Evaluation (ROUGE) 
+
+## Responsible AI
+- Features of Responsible AI
+  - Bias
+  - Fairness
+  - Inclusivity
+  - Robustness
+  - Safety
+  - Veracity
+  - Transparency
+- Responsible Model Selection Practices
+  - Environmental Considerations
+  - Sustainability
+- Characteristics of Datasets
+  - Inclusivity
+  - Diversity
+  - Curated Data Sources
+  - Balanced Data Sets
+- Legal Risks
+  - Intellectual Property Infringement
+  - Biased Model Outcomes
+  - Loss of Customer Trust
+  - End user risk
+  - Hallucinations
+  - Misinformation
+- Effects of Bias and Variance
+  - Demographic Bias
+  - Overfitting
+  - Underfitting
+- Transparent and Explainable AI
+  - Explainability
+  - Interpretability
+  - Accountability
+  - Trust
+  - Tradeoffs between model safety and transparency (for example,
+measure interpretability and performance).
+
+## Security, Compliance, and Governance for AI Solutions
+- Source citation and Documenting data origins 
+  - Data Lineage
+  - Data Cataloging
+- Secure Data Engineering Best Practices
+  - Assess Data Quality
+  - Implement Privacy Controls
+  - Data Access Control
+  - Data Integrity
+- Security and Privacy Considerations for AI Systems
+  - App Security
+  - Threat Detection
+  - Vulnerability Management
+  - Infrastructure Protection
+  - Prompt Injection
+  - Encryption at rest and in transit
+- Governance and Compliance Regulations for AI Systems
+  - Regulatory Compliance Standards for AI Systems
+    - International Organization for Standardization (ISO)
+    - System and Organization Controls (SOC)
+    - Algorithm accountability laws
+  - Data Governance Strategies
+    - Data Lifecycles
+    - Logging
+    - Residency
+    - Retention
+  - Governance Frameworks
+    - Generative AI Scoping Matrix
+
+## Mathematics for AI/ML - OPTIONAL
+- Statistical Concepts
+  - Mean
+  - Median
+  - Mode
+  - *Variance*
+  - Standard Deviation
+  - Correlation
+  - Covariance
+  - *Normal Distribution*
+  - *Long-Tailed Distribution*
+  - Probability
+  - Skewness
+  - Kurtosis
+  - Outliers
+  - Confidence Interval
+  - Hypothesis Testing
+  - p-value
+  - Type I Error
+  - Type II Error
+  - Power
+  - Effect Size
+  - Sample Size
+  - Central Limit Theorem
+  - Law of Large Numbers

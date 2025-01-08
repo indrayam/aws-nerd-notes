@@ -26,23 +26,28 @@ aws iam get-policy-version --policy-arn arn:aws:iam::155633134391:policy/BrahmaP
 ## Create Role and use Attached Policy
 
 ```bash
-# Define Assume Role Policy Document
-# Store file as resourcepolicy.json
+# Define Trust Relationship, also known as AssumeRolePolicyDocument. This is used to clearly identify the principal(s) that are allowed to assume this role. AssumeRolePolicyDocument is a resource policy, not an identity policy.
+# Store file as trust-relationship.json
 {
   "Version": "2012-10-17",
   "Statement": [
     {
       "Effect": "Allow",
-      "Action": "sts:AssumeRole",
-      "Resource": ""
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::155633134391:user/anand-cli"
+        ]
+      },
+      "Action": "sts:AssumeRole"
     }
   ]
 }
 
 # Create a Role
-aws iam create-role --role-name BrahmaRole --assume-role-policy-document file://resourcepolicy.json
+aws iam create-role --role-name BrahmaRole --assume-role-policy-document file://trust-relationship.json
 
-# Define a Customer Managed Policy to be attached to a Role (IAM Principal)
+# Define a Customer Managed Policy that captures the Permissions we want anyone assuming this role to have 
+# Store file as rootadmin-policy.json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -55,13 +60,13 @@ aws iam create-role --role-name BrahmaRole --assume-role-policy-document file://
 }
 
 # Create a Customer Managed Policy as we want to attach (and not inline) the policy
-
-aws iam create-policy --policy-name BrahmaPolicy --policy-document file://adminpolicy.json
+aws iam create-policy --policy-name BrahmaPolicy --policy-document file://rootadmin-policy.json
 
 # Attach the Customer Managed Policy to the Role
 aws iam attach-role-policy --role-name BrahmaRole --policy-arn arn:aws:iam::155633134391:policy/BrahmaPolicy
 
-# Define a Customer Managed Policy to be attached to the user 
+# Define a Customer Managed Identity Policy to be attached to the user who is the trusted principal allowed to assume the new role that we just created
+# File name: assume-role-policy.json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -74,13 +79,13 @@ aws iam attach-role-policy --role-name BrahmaRole --policy-arn arn:aws:iam::1556
 }
 
 # Create the Customer Managed policy as we want to attach the policy to the user
-aws iam create-policy --policy-name AssumeBrahmaPolicy --policy-document file://assumerolepolicy.json
+aws iam create-policy --policy-name AssumeBrahmaPolicy --policy-document file://assume-role-policy.json
 
 # Attach the Customer Managed policy to the User
-aws iam attach-user-policy --user-name oliver --policy-arn arn:aws:iam::155633134391:policy/AssumeBrahmaPolicy
+aws iam attach-user-policy --user-name anand-cli --policy-arn arn:aws:iam::155633134391:policy/AssumeBrahmaPolicy
 
 # List Attached User Policies
-aws iam list-attached-user-policies --user-name oliver
+aws iam list-attached-user-policies --user-name anand-cli
 
 # Get Attached Policy
 aws iam get-policy --policy-arn arn:aws:iam::155633134391:policy/AssumeBrahmaPolicy

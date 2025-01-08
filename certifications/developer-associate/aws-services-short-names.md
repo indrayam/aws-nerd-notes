@@ -1,0 +1,26 @@
+# AWS Service Short Names
+
+- AWS CDK	=> AWS Cloud Development Kit
+- AWS CLI	=> AWS Command Line Interface
+- AWS DMS	=> AWS Database Migration Service
+- Amazon DocumentDB	=> Amazon DocumentDB (with MongoDB compatibility)
+- Amazon EBS => Amazon Elastic Block Store
+- Amazon EC2 => Amazon Elastic Compute Cloud
+- Amazon ECR => Amazon Elastic Container Registry
+- Amazon ECS => Amazon Elastic Container Service
+- Amazon EFS => Amazon Elastic File System
+- Amazon EKS => Amazon Elastic Kubernetes Service
+- IAM	=> AWS Identity and Access Management
+- Amazon Keyspaces => Amazon Keyspaces (for Apache Cassandra)
+- AWS KMS => AWS Key Management Service
+- AWS Managed Microsoft AD => AWS Directory Service for Microsoft Active Directory
+- AWS Private CA => AWS Private Certificate Authority
+- Amazon RDS => Amazon Relational Database Service
+- Amazon S3 => Amazon Simple Storage Service
+- AWS SAM => AWS Serverless Application Model
+- AWS SCT => AWS Schema Conversion Tool
+- Amazon SES => Amazon Simple Email Service
+- Amazon SNS => Amazon Simple Notification Service
+- Amazon SQS => Amazon Simple Queue Service
+- AWS STS => AWS Security Token Service
+- Amazon VPC => Amazon Virtual Private Cloud
